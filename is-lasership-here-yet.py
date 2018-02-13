@@ -10,11 +10,11 @@ Subject: Laserhip is here.
 print("Enter tracking number:", end = " ", flush=True)
 trackingNum = input()
 pkgURL = "http://www.lasership.com/track/" + trackingNum + "/json"
-print("Sender Gmail username:", end = " ", flush=True)
+print("Sender's gmail username:", end = " ", flush=True)
 senderUser = input()
-print("Sender Gmail password:", end = " ", flush=True)
+print("Sender's gmail password:", end = " ", flush=True)
 senderPass = input()
-print("Receiver Gmail username:", end = " ", flush=True)
+print("Receiver's gmail username:", end = " ", flush=True)
 receiverUser = input()
 
 while True:
