@@ -1,8 +1,10 @@
+import getpass
 import json
 import urllib.request
 import smtplib
 from time import sleep
 from datetime import datetime
+
 
 message = """From: Is Lasership here yet?
 Subject: Laserhip is here.
@@ -12,8 +14,7 @@ trackingNum = input()
 pkgURL = "http://www.lasership.com/track/" + trackingNum + "/json"
 print("Sender's gmail username:", end = " ", flush=True)
 senderUser = input()
-print("Sender's gmail password:", end = " ", flush=True)
-senderPass = input()
+senderPass = getpass.getpass("Sender's gmail password: ")
 print("Receiver's gmail username:", end = " ", flush=True)
 receiverUser = input()
 
@@ -30,7 +31,7 @@ while True:
             break
         else:
             print(datetime.now().strftime('%I:%M%p')
-                + " - I checked. Lasership is not here yet.")
+                + " - Lasership is not here yet.")
             sleep(60)
     except:
         print(datetime.now().strftime('%I:%M%p')
