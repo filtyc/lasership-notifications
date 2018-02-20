@@ -6,6 +6,6 @@ The sender's gmail credentials I provide the script with are for an account I se
 
 <p align="center"><img src=demo2.png width=240 height=426 /></p>
 
-The script uses a few awesome packages to get the job done: _getpass_ prompts the user for a password without echoing, _json_ and _request_ parse the json file, _smtplib_ sends out the email, _time_ pauses execution and _datetime_ formats the output to the log.
+The script uses a few awesome python modules to get the job done: _getpass_ prompts the user for a password without echoing, _json_ and _urllib_ parse the json file, _smtplib_ sends out the email, _time_ pauses execution and _datetime_ formats the output to the log.
 
   [1]: https://support.google.com/accounts/answer/6010255?hl=en "google's support article on this subject"
