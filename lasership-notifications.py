@@ -6,7 +6,7 @@ from time import sleep
 from datetime import datetime
 
 
-message = """From: Is Lasership here yet?
+message = """From: Lasership Notifications
 Subject: Laserhip is here.
 """
 print("Enter tracking number:", end = " ", flush=True)
