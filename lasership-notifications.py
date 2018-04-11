@@ -7,7 +7,8 @@ from datetime import datetime
 
 
 message = """From: Lasership Notifications
-Subject: Lasership is here.
+Subject: Your package is here.
+Go pick it up!
 """
 print("Enter tracking number:", end = " ", flush=True)
 trackingNum = input()
@@ -31,7 +32,7 @@ while True:
             break
         else:
             print(datetime.now().strftime('%I:%M%p')
-                + " - Lasership is not here yet.")
+                + " - Your package is not here yet.")
             sleep(60)
     except:
         print(datetime.now().strftime('%I:%M%p')
